@@ -416,7 +416,7 @@ let closePopUpBtn = document.getElementById("close-pop-up");
 let popUpCont = document.getElementById("pop-up");
 let popUpOpen = false;
 
-//POP UP
+//POP UP//////////////////////////////////////////////////////UNCOMMENT THIS CODE BELOW TO TURN POP UP ON
 // for (const showPopUp of showPopUps) {
 //   showPopUp.addEventListener("click", () => {
 //     popUpBlurBg[0].style.display = "block";
@@ -424,7 +424,7 @@ let popUpOpen = false;
 //     popUpOpen = true;
 //   });
 // }
-
+/////////////////////////////////////////////////////////////
 closePopUpBtn.onclick = () => {
   popUpBlurBg[0].style.display = "none";
   popUp.style.display = "none";
