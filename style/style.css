@@ -235,10 +235,10 @@ body {
 }
 .join-us-arrow {
   width: 80px;
-  width: 5vw;
+  width: 4vw;
   height: 35px;
   height: 2vw;
-  background-image: url("../img/right-arrow.png");
+  background-image: url("../img/arrowSmallRed.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
