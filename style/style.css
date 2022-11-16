@@ -237,8 +237,8 @@ body {
   width: 80px;
   width: 4vw;
   height: 35px;
-  height: 2vw;
-  background-image: url("../img/arrowSmallRed.png");
+  height: 1.7vw;
+  background-image: url("../img/right-arrow-middle.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
