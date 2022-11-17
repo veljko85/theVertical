@@ -417,20 +417,20 @@ let popUpCont = document.getElementById("pop-up");
 let popUpOpen = false;
 
 //POP UP//////////////////////////////////////////////////////UNCOMMENT THIS CODE BELOW TO TURN POP UP ON
-// for (const showPopUp of showPopUps) {
-//   showPopUp.addEventListener("click", () => {
-//     if (hamOpened) {
-//       navContainer[0].classList.toggle("fade-in-nav");
-//       hamOpened = false;
-//       icons.forEach((icon) => {
-//         icon.classList.toggle("open");
-//       });
-//     }
-//     popUpBlurBg[0].style.display = "block";
-//     popUp.style.display = "block";
-//     popUpOpen = true;
-//   });
-// }
+for (const showPopUp of showPopUps) {
+  showPopUp.addEventListener("click", () => {
+    if (hamOpened) {
+      navContainer[0].classList.toggle("fade-in-nav");
+      hamOpened = false;
+      icons.forEach((icon) => {
+        icon.classList.toggle("open");
+      });
+    }
+    popUpBlurBg[0].style.display = "block";
+    popUp.style.display = "block";
+    popUpOpen = true;
+  });
+}
 /////////////////////////////////////////////////////////////
 closePopUpBtn.onclick = () => {
   popUpBlurBg[0].style.display = "none";
