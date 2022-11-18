@@ -5,9 +5,18 @@ window.onbeforeunload = function () {
 //VIDEO
 let videos = document.getElementsByClassName("videos");
 let videosRev = document.getElementsByClassName("videosRev");
+let text = document.getElementsByClassName("text");
 if (window.innerHeight / window.innerWidth > 1.4) {
   videos[0].src = "videos/Mobile Vertikal.mp4";
   videosRev[0].src = "videos/Mobile Vertikal Nazad.mp4";
+  //add class text to mobile-text
+  let mobileTexts = document.getElementsByClassName("mobile-text");
+  for (let i = 0; i < mobileTexts.length; i++) {
+    mobileTexts[i].classList.add("text");
+  }
+  for (let i = 0; i < text.length; i++) {
+    text[i].classList.remove("mobile-text");
+  }
   // TURN OFF CAUNTER DISPLAY ON FOCUS ON MOBILE AND TABLET BECAUSE OF ANDROID KEYBORD
   for (
     let i = 0;
@@ -39,6 +48,14 @@ if (window.innerHeight / window.innerWidth > 1.4) {
 } else {
   videos[0].src = "videos/Desctop.mp4";
   videosRev[0].src = "videos/Desctop Nazad.mp4";
+  //add class text to desktop-text
+  let desktopTexts = document.getElementsByClassName("desktop-text");
+  for (let i = 0; i < desktopTexts.length; i++) {
+    desktopTexts[i].classList.add("text");
+  }
+  for (let i = 0; i < text.length; i++) {
+    text[i].classList.remove("desktop-text");
+  }
 }
 
 // //HAMBURGER
@@ -145,25 +162,25 @@ navItems[2].addEventListener("click", () => {
     //content display
     setTimeout(() => {
       sectionContainer[1].style.display = "block";
-    }, 4100);
+    }, 2100);
     setTimeout(() => {
       sectionContainer[1].style.opacity = 1;
-    }, 5100);
+    }, 3100);
     setTimeout(() => {
       sectionTitle[1].classList.add("fade-in-title");
-    }, 5400);
+    }, 3400);
     setTimeout(() => {
       text[3].classList.add("fade-in-text");
-    }, 5700);
+    }, 3700);
     setTimeout(() => {
       text[4].classList.add("fade-in-text");
-    }, 6000);
+    }, 4000);
     setTimeout(() => {
       text[5].classList.add("fade-in-text");
-    }, 6300);
+    }, 4300);
     setTimeout(() => {
       joinUsContainer[1].classList.add("join-us-container-fade-in");
-    }, 6600);
+    }, 4600);
   }
 });
 ////////////// 3
@@ -176,25 +193,25 @@ navItems[4].addEventListener("click", () => {
     //content display
     setTimeout(() => {
       sectionContainer[2].style.display = "block";
-    }, 2800);
+    }, 1300);
     setTimeout(() => {
       sectionContainer[2].style.opacity = 1;
-    }, 3800);
+    }, 2300);
     setTimeout(() => {
       sectionTitle[2].classList.add("fade-in-title");
-    }, 4100);
+    }, 2600);
     setTimeout(() => {
       text[6].classList.add("fade-in-text");
-    }, 4400);
+    }, 2900);
     setTimeout(() => {
       text[7].classList.add("fade-in-text");
-    }, 4700);
+    }, 3200);
     setTimeout(() => {
       text[8].classList.add("fade-in-text");
-    }, 5000);
+    }, 3500);
     setTimeout(() => {
       joinUsContainer[2].classList.add("join-us-container-fade-in");
-    }, 5300);
+    }, 3800);
   }
 });
 ////////////// 4
@@ -207,25 +224,25 @@ navItems[6].addEventListener("click", () => {
     //content display
     setTimeout(() => {
       sectionContainer[3].style.display = "block";
-    }, 5600);
+    }, 3600);
     setTimeout(() => {
       sectionContainer[3].style.opacity = 1;
-    }, 6600);
+    }, 4600);
     setTimeout(() => {
       sectionTitle[3].classList.add("fade-in-title");
-    }, 6900);
+    }, 4900);
     setTimeout(() => {
       text[9].classList.add("fade-in-text");
-    }, 7200);
+    }, 5200);
     setTimeout(() => {
       text[10].classList.add("fade-in-text");
-    }, 7500);
+    }, 5500);
     setTimeout(() => {
       text[11].classList.add("fade-in-text");
-    }, 7800);
+    }, 5800);
     setTimeout(() => {
       joinUsContainer[3].classList.add("join-us-container-fade-in");
-    }, 8100);
+    }, 6100);
   }
 });
 ////////////// 5
@@ -238,25 +255,25 @@ navItems[8].addEventListener("click", () => {
     //content display
     setTimeout(() => {
       sectionContainer[4].style.display = "block";
-    }, 4800);
+    }, 2800);
     setTimeout(() => {
       sectionContainer[4].style.opacity = 1;
-    }, 5800);
+    }, 3800);
     setTimeout(() => {
       sectionTitle[4].classList.add("fade-in-title");
-    }, 6100);
+    }, 4100);
     setTimeout(() => {
       text[12].classList.add("fade-in-text");
-    }, 6400);
+    }, 4400);
     setTimeout(() => {
       text[13].classList.add("fade-in-text");
-    }, 6700);
+    }, 4700);
     setTimeout(() => {
       text[14].classList.add("fade-in-text");
-    }, 7000);
+    }, 5000);
     setTimeout(() => {
       joinUsContainer[4].classList.add("join-us-container-fade-in");
-    }, 7300);
+    }, 5300);
   }
 });
 ////////////// 6
@@ -269,25 +286,25 @@ navItems[1].addEventListener("click", () => {
     //content display
     setTimeout(() => {
       sectionContainer[5].style.display = "block";
-    }, 2100);
+    }, 600);
     setTimeout(() => {
       sectionContainer[5].style.opacity = 1;
-    }, 3100);
+    }, 1600);
     setTimeout(() => {
       sectionTitle[5].classList.add("fade-in-title");
-    }, 3400);
+    }, 1900);
     setTimeout(() => {
       text[15].classList.add("fade-in-text");
-    }, 3700);
+    }, 2200);
     setTimeout(() => {
       text[16].classList.add("fade-in-text");
-    }, 4000);
+    }, 2500);
     setTimeout(() => {
       text[17].classList.add("fade-in-text");
-    }, 4300);
+    }, 2800);
     setTimeout(() => {
       joinUsContainer[5].classList.add("join-us-container-fade-in");
-    }, 4600);
+    }, 3100);
   }
 });
 ////////////// 7
@@ -300,25 +317,25 @@ navItems[3].addEventListener("click", () => {
     //content display
     setTimeout(() => {
       sectionContainer[6].style.display = "block";
-    }, 8100);
+    }, 5600);
     setTimeout(() => {
       sectionContainer[6].style.opacity = 1;
-    }, 9100);
+    }, 6600);
     setTimeout(() => {
       sectionTitle[6].classList.add("fade-in-title");
-    }, 9400);
+    }, 6900);
     setTimeout(() => {
       text[18].classList.add("fade-in-text");
-    }, 9700);
+    }, 7200);
     setTimeout(() => {
       text[19].classList.add("fade-in-text");
-    }, 10000);
+    }, 7500);
     setTimeout(() => {
       text[20].classList.add("fade-in-text");
-    }, 10300);
+    }, 7800);
     setTimeout(() => {
       joinUsContainer[6].classList.add("join-us-container-fade-in");
-    }, 10600);
+    }, 8100);
   }
 });
 ////////////// 8
@@ -331,25 +348,25 @@ navItems[5].addEventListener("click", () => {
     //content display
     setTimeout(() => {
       sectionContainer[7].style.display = "block";
-    }, 4100);
+    }, 2600);
     setTimeout(() => {
       sectionContainer[7].style.opacity = 1;
-    }, 5100);
+    }, 3600);
     setTimeout(() => {
       sectionTitle[7].classList.add("fade-in-title");
-    }, 5400);
+    }, 3900);
     setTimeout(() => {
       text[21].classList.add("fade-in-text");
-    }, 5700);
+    }, 4200);
     setTimeout(() => {
       text[22].classList.add("fade-in-text");
-    }, 6000);
+    }, 4500);
     setTimeout(() => {
       text[23].classList.add("fade-in-text");
-    }, 6300);
+    }, 4800);
     setTimeout(() => {
       joinUsContainer[7].classList.add("join-us-container-fade-in");
-    }, 6600);
+    }, 5100);
   }
 });
 ////////////// 9
@@ -362,52 +379,106 @@ navItems[7].addEventListener("click", () => {
     //content display
     setTimeout(() => {
       sectionContainer[8].style.display = "block";
-    }, 5100);
+    }, 3100);
     setTimeout(() => {
       sectionContainer[8].style.opacity = 1;
-    }, 6100);
+    }, 4100);
     setTimeout(() => {
       sectionTitle[8].classList.add("fade-in-title");
-    }, 6400);
+    }, 4400);
     setTimeout(() => {
       text[24].classList.add("fade-in-text");
-    }, 6700);
+    }, 4700);
     setTimeout(() => {
       text[25].classList.add("fade-in-text");
-    }, 7000);
+    }, 5000);
     setTimeout(() => {
       text[26].classList.add("fade-in-text");
-    }, 7300);
+    }, 5300);
     setTimeout(() => {
       joinUsContainer[8].classList.add("join-us-container-fade-in");
-    }, 7600);
+    }, 5600);
   }
 });
-//WELL BEING PAGE
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+let navItemWellBeingPage = document.getElementById("nav-item-well-being-page");
+let wellBeingPageOpen = false;
 let wellBeingPageContainer = document.getElementById(
   "well-being-page-container"
 );
 let closeWellBeingPage = document.getElementById("close-well-being-page");
-let wellBeingPageOpen = false;
-document
-  .getElementsByClassName("nav-item-well-being-page")[0]
-  .addEventListener("click", () => {
-    // close nav bar
-    icons.forEach((icon) => {
-      icon.classList.toggle("open");
-      !hamOpened ? (hamOpened = true) : (hamOpened = false);
-    });
-    setTimeout(() => {
-      navContainer[0].classList.toggle("fade-in-nav");
-    }, 200);
-    wellBeingPageContainer.style.display = "block";
-    wellBeingPageOpen = true;
+//WELL BEING SCROLL////////////////////////////////////////////////COMMENT THIS CODE BELOW TO TURN WELL BEING POP UP OFF
+navItemWellBeingPage.addEventListener("click", () => {
+  // close nav bar
+  icons.forEach((icon) => {
+    icon.classList.toggle("open");
+    !hamOpened ? (hamOpened = true) : (hamOpened = false);
   });
-closeWellBeingPage.onclick = () => {
-  wellBeingPageContainer.style.display = "none";
-  wellBeingPageOpen = false;
-};
-
+  setTimeout(() => {
+    navContainer[0].classList.toggle("fade-in-nav");
+  }, 200);
+  //remove content for all
+  for (const sectionTitles of sectionTitle) {
+    sectionTitles.classList.remove("fade-in-title");
+  }
+  for (const texts of text) {
+    texts.classList.remove("fade-in-text");
+  }
+  for (const joinUsContainers of joinUsContainer) {
+    joinUsContainers.classList.remove("join-us-container-fade-in");
+  }
+  for (const sectionContainers of sectionContainer) {
+    sectionContainers.style.opacity = 0;
+    sectionContainers.style.display = "none";
+  }
+  if (!triger) {
+    //start video
+    setDisplayCounter(10, counterLine, 9);
+    videos[0].currentTime = 69.9;
+    scrollVideo(11, 76.6, 77.5, 7.2);
+    //content display
+    setTimeout(() => {
+      sectionContainer[9].style.display = "block";
+    }, 1800);
+    setTimeout(() => {
+      sectionContainer[9].style.opacity = 1;
+    }, 2800);
+    setTimeout(() => {
+      sectionTitle[9].classList.add("fade-in-title");
+    }, 3100);
+    setTimeout(() => {
+      text[27].classList.add("fade-in-text");
+    }, 3400);
+    setTimeout(() => {
+      text[28].classList.add("fade-in-text");
+    }, 3700);
+    setTimeout(() => {
+      text[29].classList.add("fade-in-text");
+    }, 4000);
+    setTimeout(() => {
+      joinUsContainer[9].classList.add("join-us-container-fade-in");
+    }, 4300);
+  }
+});
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//WELL BEING POP UP////////////////////////////////////////////////UNCOMMENT THIS CODE BELOW TO TURN WELL BEING POP UP ON
+// navItemWellBeingPage.addEventListener("click", () => {
+//   // close nav bar
+//   icons.forEach((icon) => {
+//     icon.classList.toggle("open");
+//     !hamOpened ? (hamOpened = true) : (hamOpened = false);
+//   });
+//   setTimeout(() => {
+//     navContainer[0].classList.toggle("fade-in-nav");
+//   }, 200);
+//   wellBeingPageContainer.style.display = "block";
+//   wellBeingPageOpen = true;
+// });
+// closeWellBeingPage.onclick = () => {
+//   wellBeingPageContainer.style.display = "none";
+//   wellBeingPageOpen = false;
+// };
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //POP UP
 let popUp = document.getElementById("contact-pop-up-container");
 let popUpBlurBg = document.getElementsByClassName("blur-bg");
@@ -431,7 +502,7 @@ for (const showPopUp of showPopUps) {
     popUpOpen = true;
   });
 }
-/////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
 closePopUpBtn.onclick = () => {
   popUpBlurBg[0].style.display = "none";
   popUp.style.display = "none";
@@ -449,8 +520,9 @@ let scrollBtn = document.getElementById("mouse-scroll");
 let isrCanMobLogo = document.getElementsByClassName(
   "isr-can-logo-container-mob"
 );
+let credits = document.getElementsByClassName("credits");
 // isrCanMobLogo[0].style.opacity = 1;
-let text = document.getElementsByClassName("text");
+
 // let textTen = document.getElementsByClassName("text-ten");
 let sectionContainer = document.getElementsByClassName("section-container");
 let sectionTitle = document.getElementsByClassName("section-title");
@@ -462,7 +534,7 @@ let joinUsContainer = document.getElementsByClassName("join-us-container");
 let triger = true;
 
 function setDisplayCounter(scrollSectionDisplay, counterLine, counterLineNum) {
-  if (scrollSection < 10) {
+  if (scrollSectionDisplay < 10) {
     counterUp.innerHTML = "0" + scrollSectionDisplay;
   } else {
     counterUp.innerHTML = scrollSectionDisplay;
@@ -482,6 +554,14 @@ function setDisplayCounter(scrollSectionDisplay, counterLine, counterLineNum) {
   }
   if (scrollSectionDisplay > 0) {
     counterLine[counterLineNum].style.backgroundColor = "#ee4123";
+  }
+  if (scrollSectionDisplay == 11) {
+    setTimeout(() => {
+      credits[0].style.display = "inline";
+    }, 4000);
+  }
+  if (scrollSectionDisplay < 11) {
+    credits[0].style.display = "none";
   }
 }
 
@@ -546,25 +626,25 @@ function videoForvard() {
     //content display
     setTimeout(() => {
       sectionContainer[1].style.display = "block";
-    }, 4100);
+    }, 2100);
     setTimeout(() => {
       sectionContainer[1].style.opacity = 1;
-    }, 5100);
+    }, 3100);
     setTimeout(() => {
       sectionTitle[1].classList.add("fade-in-title");
-    }, 5400);
+    }, 3400);
     setTimeout(() => {
       text[3].classList.add("fade-in-text");
-    }, 5700);
+    }, 3700);
     setTimeout(() => {
       text[4].classList.add("fade-in-text");
-    }, 6000);
+    }, 4000);
     setTimeout(() => {
       text[5].classList.add("fade-in-text");
-    }, 6300);
+    }, 4300);
     setTimeout(() => {
       joinUsContainer[1].classList.add("join-us-container-fade-in");
-    }, 6600);
+    }, 4600);
   }
   ///////////////   3
   if (scrollSection == 3 && !triger) {
@@ -584,25 +664,25 @@ function videoForvard() {
     //content display
     setTimeout(() => {
       sectionContainer[2].style.display = "block";
-    }, 2800);
+    }, 1300);
     setTimeout(() => {
       sectionContainer[2].style.opacity = 1;
-    }, 3800);
+    }, 2300);
     setTimeout(() => {
       sectionTitle[2].classList.add("fade-in-title");
-    }, 4100);
+    }, 2600);
     setTimeout(() => {
       text[6].classList.add("fade-in-text");
-    }, 4400);
+    }, 2900);
     setTimeout(() => {
       text[7].classList.add("fade-in-text");
-    }, 4700);
+    }, 3200);
     setTimeout(() => {
       text[8].classList.add("fade-in-text");
-    }, 5000);
+    }, 3500);
     setTimeout(() => {
       joinUsContainer[2].classList.add("join-us-container-fade-in");
-    }, 5300);
+    }, 3800);
   }
   ///////////// 4
   if (scrollSection == 4 && !triger) {
@@ -622,25 +702,25 @@ function videoForvard() {
     //content display
     setTimeout(() => {
       sectionContainer[3].style.display = "block";
-    }, 5600);
+    }, 3600);
     setTimeout(() => {
       sectionContainer[3].style.opacity = 1;
-    }, 6600);
+    }, 4600);
     setTimeout(() => {
       sectionTitle[3].classList.add("fade-in-title");
-    }, 6900);
+    }, 4900);
     setTimeout(() => {
       text[9].classList.add("fade-in-text");
-    }, 7200);
+    }, 5200);
     setTimeout(() => {
       text[10].classList.add("fade-in-text");
-    }, 7500);
+    }, 5500);
     setTimeout(() => {
       text[11].classList.add("fade-in-text");
-    }, 7800);
+    }, 5800);
     setTimeout(() => {
       joinUsContainer[3].classList.add("join-us-container-fade-in");
-    }, 8100);
+    }, 6100);
   }
   //////////   5
   if (scrollSection == 5 && !triger) {
@@ -660,25 +740,25 @@ function videoForvard() {
     //content display
     setTimeout(() => {
       sectionContainer[4].style.display = "block";
-    }, 4800);
+    }, 2800);
     setTimeout(() => {
       sectionContainer[4].style.opacity = 1;
-    }, 5800);
+    }, 3800);
     setTimeout(() => {
       sectionTitle[4].classList.add("fade-in-title");
-    }, 6100);
+    }, 4100);
     setTimeout(() => {
       text[12].classList.add("fade-in-text");
-    }, 6400);
+    }, 4400);
     setTimeout(() => {
       text[13].classList.add("fade-in-text");
-    }, 6700);
+    }, 4700);
     setTimeout(() => {
       text[14].classList.add("fade-in-text");
-    }, 7000);
+    }, 5000);
     setTimeout(() => {
       joinUsContainer[4].classList.add("join-us-container-fade-in");
-    }, 7300);
+    }, 5300);
   }
   ////////// 6
   if (scrollSection == 6 && !triger) {
@@ -698,25 +778,25 @@ function videoForvard() {
     //content display
     setTimeout(() => {
       sectionContainer[5].style.display = "block";
-    }, 2100);
+    }, 600);
     setTimeout(() => {
       sectionContainer[5].style.opacity = 1;
-    }, 3100);
+    }, 1600);
     setTimeout(() => {
       sectionTitle[5].classList.add("fade-in-title");
-    }, 3400);
+    }, 1900);
     setTimeout(() => {
       text[15].classList.add("fade-in-text");
-    }, 3700);
+    }, 2200);
     setTimeout(() => {
       text[16].classList.add("fade-in-text");
-    }, 4000);
+    }, 2500);
     setTimeout(() => {
       text[17].classList.add("fade-in-text");
-    }, 4300);
+    }, 2800);
     setTimeout(() => {
       joinUsContainer[5].classList.add("join-us-container-fade-in");
-    }, 4600);
+    }, 3100);
   }
   ////////// 7
   if (scrollSection == 7 && !triger) {
@@ -736,25 +816,25 @@ function videoForvard() {
     //content display
     setTimeout(() => {
       sectionContainer[6].style.display = "block";
-    }, 8100);
+    }, 5600);
     setTimeout(() => {
       sectionContainer[6].style.opacity = 1;
-    }, 9100);
+    }, 6600);
     setTimeout(() => {
       sectionTitle[6].classList.add("fade-in-title");
-    }, 9400);
+    }, 6900);
     setTimeout(() => {
       text[18].classList.add("fade-in-text");
-    }, 9700);
+    }, 7200);
     setTimeout(() => {
       text[19].classList.add("fade-in-text");
-    }, 10000);
+    }, 7500);
     setTimeout(() => {
       text[20].classList.add("fade-in-text");
-    }, 10300);
+    }, 7800);
     setTimeout(() => {
       joinUsContainer[6].classList.add("join-us-container-fade-in");
-    }, 10600);
+    }, 8100);
   }
   ////////// 8
   if (scrollSection == 8 && !triger) {
@@ -774,25 +854,25 @@ function videoForvard() {
     //content display
     setTimeout(() => {
       sectionContainer[7].style.display = "block";
-    }, 4100);
+    }, 2600);
     setTimeout(() => {
       sectionContainer[7].style.opacity = 1;
-    }, 5100);
+    }, 3600);
     setTimeout(() => {
       sectionTitle[7].classList.add("fade-in-title");
-    }, 5400);
+    }, 3900);
     setTimeout(() => {
       text[21].classList.add("fade-in-text");
-    }, 5700);
+    }, 4200);
     setTimeout(() => {
       text[22].classList.add("fade-in-text");
-    }, 6000);
+    }, 4500);
     setTimeout(() => {
       text[23].classList.add("fade-in-text");
-    }, 6300);
+    }, 4800);
     setTimeout(() => {
       joinUsContainer[7].classList.add("join-us-container-fade-in");
-    }, 6600);
+    }, 5100);
   }
   ///////// 9
   if (scrollSection == 9 && !triger) {
@@ -812,25 +892,25 @@ function videoForvard() {
     //content display
     setTimeout(() => {
       sectionContainer[8].style.display = "block";
-    }, 5100);
+    }, 3100);
     setTimeout(() => {
       sectionContainer[8].style.opacity = 1;
-    }, 6100);
+    }, 4100);
     setTimeout(() => {
       sectionTitle[8].classList.add("fade-in-title");
-    }, 6400);
+    }, 4400);
     setTimeout(() => {
       text[24].classList.add("fade-in-text");
-    }, 6700);
+    }, 4700);
     setTimeout(() => {
       text[25].classList.add("fade-in-text");
-    }, 7000);
+    }, 5000);
     setTimeout(() => {
       text[26].classList.add("fade-in-text");
-    }, 7300);
+    }, 5300);
     setTimeout(() => {
       joinUsContainer[8].classList.add("join-us-container-fade-in");
-    }, 7600);
+    }, 5600);
   }
   ////////// 10
   if (scrollSection == 10 && !triger) {
@@ -851,25 +931,25 @@ function videoForvard() {
     //content display
     setTimeout(() => {
       sectionContainer[9].style.display = "block";
-    }, 3800);
+    }, 1800);
     setTimeout(() => {
       sectionContainer[9].style.opacity = 1;
-    }, 4800);
+    }, 2800);
     setTimeout(() => {
       sectionTitle[9].classList.add("fade-in-title");
-    }, 5100);
+    }, 3100);
     setTimeout(() => {
       text[27].classList.add("fade-in-text");
-    }, 5400);
+    }, 3400);
     setTimeout(() => {
       text[28].classList.add("fade-in-text");
-    }, 5700);
+    }, 3700);
     setTimeout(() => {
       text[29].classList.add("fade-in-text");
-    }, 6000);
+    }, 4000);
     setTimeout(() => {
       joinUsContainer[9].classList.add("join-us-container-fade-in");
-    }, 6300);
+    }, 4300);
   }
   ////////// 11
   if (scrollSection == 11 && !triger) {
@@ -961,25 +1041,25 @@ function videoReverse() {
     //content display
     setTimeout(() => {
       sectionContainer[1].style.display = "block";
-    }, 3100);
+    }, 1400);
     setTimeout(() => {
       sectionContainer[1].style.opacity = 1;
-    }, 4100);
+    }, 2400);
     setTimeout(() => {
       sectionTitle[1].classList.add("fade-in-title");
-    }, 4400);
+    }, 2700);
     setTimeout(() => {
       text[3].classList.add("fade-in-text");
-    }, 4900);
+    }, 3000);
     setTimeout(() => {
       text[4].classList.add("fade-in-text");
-    }, 5200);
+    }, 3300);
     setTimeout(() => {
       text[5].classList.add("fade-in-text");
-    }, 5500);
+    }, 3600);
     setTimeout(() => {
       joinUsContainer[1].classList.add("join-us-container-fade-in");
-    }, 5800);
+    }, 3900);
   }
   //////// 4
   if (scrollSection == 5 && !triger) {
@@ -999,25 +1079,25 @@ function videoReverse() {
     //content display
     setTimeout(() => {
       sectionContainer[2].style.display = "block";
-    }, 6300);
+    }, 2300);
     setTimeout(() => {
       sectionContainer[2].style.opacity = 1;
-    }, 7300);
+    }, 5300);
     setTimeout(() => {
       sectionTitle[2].classList.add("fade-in-title");
-    }, 7600);
+    }, 5600);
     setTimeout(() => {
       text[6].classList.add("fade-in-text");
-    }, 7900);
+    }, 5900);
     setTimeout(() => {
       text[7].classList.add("fade-in-text");
-    }, 8200);
+    }, 6200);
     setTimeout(() => {
       text[8].classList.add("fade-in-text");
-    }, 8500);
+    }, 6500);
     setTimeout(() => {
       joinUsContainer[2].classList.add("join-us-container-fade-in");
-    }, 8800);
+    }, 6800);
   }
   ///////  5
   if (scrollSection == 6 && !triger) {
@@ -1037,25 +1117,25 @@ function videoReverse() {
     //content display
     setTimeout(() => {
       sectionContainer[3].style.display = "block";
-    }, 4600);
+    }, 2600);
     setTimeout(() => {
       sectionContainer[3].style.opacity = 1;
-    }, 5600);
+    }, 3600);
     setTimeout(() => {
       sectionTitle[3].classList.add("fade-in-title");
-    }, 5900);
+    }, 3900);
     setTimeout(() => {
       text[9].classList.add("fade-in-text");
-    }, 6200);
+    }, 4200);
     setTimeout(() => {
       text[10].classList.add("fade-in-text");
-    }, 6500);
+    }, 4500);
     setTimeout(() => {
       text[11].classList.add("fade-in-text");
-    }, 6800);
+    }, 4800);
     setTimeout(() => {
       joinUsContainer[3].classList.add("join-us-container-fade-in");
-    }, 7100);
+    }, 3100);
   }
   ///////  6
   if (scrollSection == 7 && !triger) {
@@ -1075,25 +1155,25 @@ function videoReverse() {
     //content display
     setTimeout(() => {
       sectionContainer[4].style.display = "block";
-    }, 3100);
+    }, 1600);
     setTimeout(() => {
       sectionContainer[4].style.opacity = 1;
-    }, 4100);
+    }, 2600);
     setTimeout(() => {
       sectionTitle[4].classList.add("fade-in-title");
-    }, 4400);
+    }, 2900);
     setTimeout(() => {
       text[12].classList.add("fade-in-text");
-    }, 4700);
+    }, 3200);
     setTimeout(() => {
       text[13].classList.add("fade-in-text");
-    }, 5000);
+    }, 3500);
     setTimeout(() => {
       text[14].classList.add("fade-in-text");
-    }, 5300);
+    }, 3800);
     setTimeout(() => {
       joinUsContainer[4].classList.add("join-us-container-fade-in");
-    }, 5600);
+    }, 4100);
   }
   ///////  7
   if (scrollSection == 8 && !triger) {
@@ -1113,25 +1193,25 @@ function videoReverse() {
     //content display
     setTimeout(() => {
       sectionContainer[5].style.display = "block";
-    }, 9100);
+    }, 6100);
     setTimeout(() => {
       sectionContainer[5].style.opacity = 1;
-    }, 10100);
+    }, 7100);
     setTimeout(() => {
       sectionTitle[5].classList.add("fade-in-title");
-    }, 10400);
+    }, 7400);
     setTimeout(() => {
       text[15].classList.add("fade-in-text");
-    }, 10700);
+    }, 7700);
     setTimeout(() => {
       text[16].classList.add("fade-in-text");
-    }, 11000);
+    }, 8000);
     setTimeout(() => {
       text[17].classList.add("fade-in-text");
-    }, 11300);
+    }, 8300);
     setTimeout(() => {
       joinUsContainer[5].classList.add("join-us-container-fade-in");
-    }, 11600);
+    }, 8600);
   }
   //////// 8
   if (scrollSection == 9 && !triger) {
@@ -1151,25 +1231,25 @@ function videoReverse() {
     //content display
     setTimeout(() => {
       sectionContainer[6].style.display = "block";
-    }, 4100);
+    }, 2100);
     setTimeout(() => {
       sectionContainer[6].style.opacity = 1;
-    }, 5100);
+    }, 3100);
     setTimeout(() => {
       sectionTitle[6].classList.add("fade-in-title");
-    }, 5400);
+    }, 3400);
     setTimeout(() => {
       text[18].classList.add("fade-in-text");
-    }, 5700);
+    }, 3700);
     setTimeout(() => {
       text[19].classList.add("fade-in-text");
-    }, 6000);
+    }, 4000);
     setTimeout(() => {
       text[20].classList.add("fade-in-text");
-    }, 6300);
+    }, 4300);
     setTimeout(() => {
       joinUsContainer[6].classList.add("join-us-container-fade-in");
-    }, 6600);
+    }, 4600);
   }
   //////// 9
   if (scrollSection == 10 && !triger) {
@@ -1190,25 +1270,25 @@ function videoReverse() {
     //content display
     setTimeout(() => {
       sectionContainer[7].style.display = "block";
-    }, 6100);
+    }, 4100);
     setTimeout(() => {
       sectionContainer[7].style.opacity = 1;
-    }, 7100);
+    }, 5100);
     setTimeout(() => {
       sectionTitle[7].classList.add("fade-in-title");
-    }, 7400);
+    }, 5400);
     setTimeout(() => {
       text[21].classList.add("fade-in-text");
-    }, 7700);
+    }, 5700);
     setTimeout(() => {
       text[22].classList.add("fade-in-text");
-    }, 8000);
+    }, 6000);
     setTimeout(() => {
       text[23].classList.add("fade-in-text");
-    }, 8300);
+    }, 6300);
     setTimeout(() => {
       joinUsContainer[7].classList.add("join-us-container-fade-in");
-    }, 8600);
+    }, 6600);
   }
   ////////// 10
   if (scrollSection == 11 && !triger) {
@@ -1228,25 +1308,25 @@ function videoReverse() {
     //content display
     setTimeout(() => {
       sectionContainer[8].style.display = "block";
-    }, 3600);
+    }, 2100);
     setTimeout(() => {
       sectionContainer[8].style.opacity = 1;
-    }, 4600);
+    }, 3100);
     setTimeout(() => {
       sectionTitle[8].classList.add("fade-in-title");
-    }, 4900);
+    }, 3400);
     setTimeout(() => {
       text[24].classList.add("fade-in-text");
-    }, 5200);
+    }, 3700);
     setTimeout(() => {
       text[25].classList.add("fade-in-text");
-    }, 5500);
+    }, 4000);
     setTimeout(() => {
       text[26].classList.add("fade-in-text");
-    }, 5800);
+    }, 4300);
     setTimeout(() => {
       joinUsContainer[8].classList.add("join-us-container-fade-in");
-    }, 6100);
+    }, 4600);
   }
   ////////// 11
   if (scrollSection == 12 && !triger) {
@@ -1261,25 +1341,25 @@ function videoReverse() {
     //content display
     setTimeout(() => {
       sectionContainer[9].style.display = "block";
-    }, 3600);
+    }, 1600);
     setTimeout(() => {
       sectionContainer[9].style.opacity = 1;
-    }, 4600);
+    }, 2600);
     setTimeout(() => {
       sectionTitle[9].classList.add("fade-in-title");
-    }, 4900);
+    }, 2900);
     setTimeout(() => {
       text[27].classList.add("fade-in-text");
-    }, 5200);
+    }, 3200);
     setTimeout(() => {
       text[28].classList.add("fade-in-text");
-    }, 5500);
+    }, 3500);
     setTimeout(() => {
       text[29].classList.add("fade-in-text");
-    }, 5800);
+    }, 3800);
     setTimeout(() => {
       joinUsContainer[9].classList.add("join-us-container-fade-in");
-    }, 6100);
+    }, 4100);
   }
 }
 
@@ -1362,25 +1442,25 @@ let intervalPlay = setInterval(() => {
       //content display
       setTimeout(() => {
         sectionContainer[1].style.display = "block";
-      }, 4100);
+      }, 2100);
       setTimeout(() => {
         sectionContainer[1].style.opacity = 1;
-      }, 5100);
+      }, 3100);
       setTimeout(() => {
         sectionTitle[1].classList.add("fade-in-title");
-      }, 5400);
+      }, 3400);
       setTimeout(() => {
         text[3].classList.add("fade-in-text");
-      }, 5700);
+      }, 3700);
       setTimeout(() => {
         text[4].classList.add("fade-in-text");
-      }, 6000);
+      }, 4000);
       setTimeout(() => {
         text[5].classList.add("fade-in-text");
-      }, 6300);
+      }, 4300);
       setTimeout(() => {
         joinUsContainer[1].classList.add("join-us-container-fade-in");
-      }, 6600);
+      }, 4600);
     }
     if (locationHref == "#construction") {
       //start video
@@ -1390,25 +1470,25 @@ let intervalPlay = setInterval(() => {
       //content display
       setTimeout(() => {
         sectionContainer[2].style.display = "block";
-      }, 2800);
+      }, 1300);
       setTimeout(() => {
         sectionContainer[2].style.opacity = 1;
-      }, 3900);
+      }, 2300);
       setTimeout(() => {
         sectionTitle[2].classList.add("fade-in-title");
-      }, 4100);
+      }, 2600);
       setTimeout(() => {
         text[6].classList.add("fade-in-text");
-      }, 4400);
+      }, 2900);
       setTimeout(() => {
         text[7].classList.add("fade-in-text");
-      }, 4700);
+      }, 3200);
       setTimeout(() => {
         text[8].classList.add("fade-in-text");
-      }, 5000);
+      }, 3500);
       setTimeout(() => {
         joinUsContainer[2].classList.add("join-us-container-fade-in");
-      }, 5300);
+      }, 3800);
     }
     if (locationHref == "#iot&sensors") {
       //start video
@@ -1418,25 +1498,25 @@ let intervalPlay = setInterval(() => {
       //content display
       setTimeout(() => {
         sectionContainer[3].style.display = "block";
-      }, 5600);
+      }, 3600);
       setTimeout(() => {
         sectionContainer[3].style.opacity = 1;
-      }, 6600);
+      }, 4600);
       setTimeout(() => {
         sectionTitle[3].classList.add("fade-in-title");
-      }, 6900);
+      }, 4900);
       setTimeout(() => {
         text[9].classList.add("fade-in-text");
-      }, 7200);
+      }, 5200);
       setTimeout(() => {
         text[10].classList.add("fade-in-text");
-      }, 7500);
+      }, 5500);
       setTimeout(() => {
         text[11].classList.add("fade-in-text");
-      }, 7800);
+      }, 5800);
       setTimeout(() => {
         joinUsContainer[3].classList.add("join-us-container-fade-in");
-      }, 8100);
+      }, 6100);
     }
     if (locationHref == "#management&maintenance") {
       //start video
@@ -1446,25 +1526,25 @@ let intervalPlay = setInterval(() => {
       //content display
       setTimeout(() => {
         sectionContainer[4].style.display = "block";
-      }, 4800);
+      }, 2800);
       setTimeout(() => {
         sectionContainer[4].style.opacity = 1;
-      }, 5800);
+      }, 3800);
       setTimeout(() => {
         sectionTitle[4].classList.add("fade-in-title");
-      }, 6100);
+      }, 4100);
       setTimeout(() => {
         text[12].classList.add("fade-in-text");
-      }, 6400);
+      }, 4400);
       setTimeout(() => {
         text[13].classList.add("fade-in-text");
-      }, 6700);
+      }, 4700);
       setTimeout(() => {
         text[14].classList.add("fade-in-text");
-      }, 7000);
+      }, 5000);
       setTimeout(() => {
         joinUsContainer[4].classList.add("join-us-container-fade-in");
-      }, 7300);
+      }, 5300);
     }
     if (locationHref == "#customerexperience") {
       //start video
@@ -1474,25 +1554,25 @@ let intervalPlay = setInterval(() => {
       //content display
       setTimeout(() => {
         sectionContainer[5].style.display = "block";
-      }, 2100);
+      }, 600);
       setTimeout(() => {
         sectionContainer[5].style.opacity = 1;
-      }, 3100);
+      }, 1600);
       setTimeout(() => {
         sectionTitle[5].classList.add("fade-in-title");
-      }, 3400);
+      }, 1900);
       setTimeout(() => {
         text[15].classList.add("fade-in-text");
-      }, 3700);
+      }, 2200);
       setTimeout(() => {
         text[16].classList.add("fade-in-text");
-      }, 4000);
+      }, 2500);
       setTimeout(() => {
         text[17].classList.add("fade-in-text");
-      }, 4300);
+      }, 2800);
       setTimeout(() => {
         joinUsContainer[5].classList.add("join-us-container-fade-in");
-      }, 4600);
+      }, 3100);
     }
     if (locationHref == "#landscapingandgreenspaces") {
       //start video
@@ -1502,25 +1582,25 @@ let intervalPlay = setInterval(() => {
       //content display
       setTimeout(() => {
         sectionContainer[6].style.display = "block";
-      }, 8100);
+      }, 5600);
       setTimeout(() => {
         sectionContainer[6].style.opacity = 1;
-      }, 9100);
+      }, 6600);
       setTimeout(() => {
         sectionTitle[6].classList.add("fade-in-title");
-      }, 9400);
+      }, 6900);
       setTimeout(() => {
         text[18].classList.add("fade-in-text");
-      }, 9700);
+      }, 7200);
       setTimeout(() => {
         text[19].classList.add("fade-in-text");
-      }, 10000);
+      }, 7500);
       setTimeout(() => {
         text[20].classList.add("fade-in-text");
-      }, 10300);
+      }, 7800);
       setTimeout(() => {
         joinUsContainer[6].classList.add("join-us-container-fade-in");
-      }, 10600);
+      }, 8100);
     }
     if (locationHref == "#suitabilityandrenewableenergy") {
       //start video
@@ -1530,25 +1610,25 @@ let intervalPlay = setInterval(() => {
       //content display
       setTimeout(() => {
         sectionContainer[7].style.display = "block";
-      }, 4100);
+      }, 2600);
       setTimeout(() => {
         sectionContainer[7].style.opacity = 1;
-      }, 5100);
+      }, 3600);
       setTimeout(() => {
         sectionTitle[7].classList.add("fade-in-title");
-      }, 5400);
+      }, 3900);
       setTimeout(() => {
         text[21].classList.add("fade-in-text");
-      }, 5700);
+      }, 4200);
       setTimeout(() => {
         text[22].classList.add("fade-in-text");
-      }, 6000);
+      }, 4500);
       setTimeout(() => {
         text[23].classList.add("fade-in-text");
-      }, 6300);
+      }, 4800);
       setTimeout(() => {
         joinUsContainer[7].classList.add("join-us-container-fade-in");
-      }, 6600);
+      }, 5100);
     }
     if (locationHref == "#mobility&delivery") {
       //start video
@@ -1558,25 +1638,25 @@ let intervalPlay = setInterval(() => {
       //content display
       setTimeout(() => {
         sectionContainer[8].style.display = "block";
-      }, 5100);
+      }, 3100);
       setTimeout(() => {
         sectionContainer[8].style.opacity = 1;
-      }, 6100);
+      }, 4100);
       setTimeout(() => {
         sectionTitle[8].classList.add("fade-in-title");
-      }, 6400);
+      }, 4400);
       setTimeout(() => {
         text[24].classList.add("fade-in-text");
-      }, 6700);
+      }, 4700);
       setTimeout(() => {
         text[25].classList.add("fade-in-text");
-      }, 7000);
+      }, 5000);
       setTimeout(() => {
         text[26].classList.add("fade-in-text");
-      }, 7300);
+      }, 5300);
       setTimeout(() => {
         joinUsContainer[8].classList.add("join-us-container-fade-in");
-      }, 7600);
+      }, 5600);
     }
     if (locationHref == "#wellbeing") {
       //start video
@@ -1587,25 +1667,25 @@ let intervalPlay = setInterval(() => {
       //content display
       setTimeout(() => {
         sectionContainer[9].style.display = "block";
-      }, 3800);
+      }, 1800);
       setTimeout(() => {
         sectionContainer[9].style.opacity = 1;
-      }, 4800);
+      }, 2800);
       setTimeout(() => {
         sectionTitle[9].classList.add("fade-in-title");
-      }, 5100);
+      }, 3100);
       setTimeout(() => {
         text[27].classList.add("fade-in-text");
-      }, 5400);
+      }, 3400);
       setTimeout(() => {
         text[28].classList.add("fade-in-text");
-      }, 5700);
+      }, 3700);
       setTimeout(() => {
         text[29].classList.add("fade-in-text");
-      }, 6000);
+      }, 4000);
       setTimeout(() => {
         joinUsContainer[9].classList.add("join-us-container-fade-in");
-      }, 6300);
+      }, 4300);
     }
   }
 }, 100);

@@ -162,6 +162,34 @@ body {
   height: 1.04vw;
   background-color: #c9c9c9;
 }
+.credits {
+  width: 400px;
+  width: 20.8vw;
+  height: 40px;
+  height: 2.08vw;
+  position: fixed;
+  z-index: 4;
+  right: 100px;
+  right: 5.21vw;
+  bottom: 0;
+  /* bottom: 2.6vw; */
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-size: 0.73vw;
+  letter-spacing: 0px;
+  line-height: 27px;
+  line-height: 1.4vw;
+  color: #000000;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+.credits a {
+  color: #000000;
+  font-weight: 900;
+}
 .sections-container {
   width: 100vw;
   height: 100vh;
@@ -187,6 +215,10 @@ body {
   padding-left: 10%;
   padding-top: 50px;
 } */
+.desktop-text,
+.mobile-text {
+  display: none;
+}
 .text {
   font-size: 18px;
   font-size: 1vw;
@@ -843,6 +875,31 @@ input:focus::placeholder {
     height: 20px;
     height: 5.33vw;
   }
+  .credits {
+    width: 300px;
+    width: 80vw;
+    height: 20px;
+    height: 5.33vw;
+    position: fixed;
+    z-index: 4;
+    right: 0;
+    left: 20px;
+    right: 5.33vw;
+    bottom: 0;
+    /* bottom: 4.53vw; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-size: 3.2vw;
+    letter-spacing: 0px;
+    line-height: 27px;
+    line-height: 1.4vw;
+    color: #000000;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+  }
   /* ///// */
   .section-title {
     font-size: 30px;
@@ -1182,6 +1239,30 @@ input:focus::placeholder {
     width: 0.39vw;
     height: 20px;
     height: 2.6vw;
+  }
+  .credits {
+    width: 400px;
+    width: 39.1vw;
+    height: 50px;
+    height: 2.6vw;
+    position: fixed;
+    z-index: 4;
+    right: 100px;
+    right: 5.21vw;
+    bottom: 50px;
+    bottom: 2.6vw;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-size: 1.56vw;
+    letter-spacing: 0px;
+    line-height: 27px;
+    line-height: 1.4vw;
+    color: #000000;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
   }
   /* ///// */
   .section-title {
